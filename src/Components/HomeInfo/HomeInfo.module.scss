@@ -1,0 +1,125 @@
+@import '../../scss/variables';
+
+.homeInfo {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: rem(20);
+  padding: rem(10);
+  @media(min-width: $sm) {
+    padding: rem(30);
+  }
+  // @media(min-width: $xl) {
+  //   padding: rem(50) rem(80);
+  // }
+  div {
+    background-color: $dark2;
+    color: $light;
+    border-radius: rem(2);
+  }
+  .homeInfoTitle {
+    line-height: rem(24);
+    margin-bottom: rem(30);
+    min-height: rem(50);
+    display: flex;
+    align-items: center;
+    font: {
+      family: $roboto;
+      size: rem(26);
+      weight: 800;
+    }
+  }
+  .homeInfoDate {
+    grid-column: 1 / 5;
+    box-shadow: 0 0 rem(2) $light, 0 0 rem(2) $light;
+    @media(min-width: $md) {
+      grid-column: 1 / 2;
+    }
+    width: 100%;
+    display: block;
+    padding: rem(30);
+    .homeInfoDay {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: rem(20);
+      .homeInfoDayName {
+        font: {
+          size: rem(16);
+          family: $roboto;
+          weight: 600;
+        }
+      }
+      .homeInfoDayDispo {
+        font: {
+          size: rem(14);
+          family: $roboto;
+          weight: 400;
+        }
+      }
+    }
+  }
+  .homeInfoBrand {
+    grid-column: 1 / 5;
+    box-shadow: 0 0 rem(2) $light, 0 0 rem(2) $light;
+    @media(min-width: $md) {
+      grid-column: 2 / 4;
+    }
+    width: 100%;
+    padding: rem(30);
+    h6 {
+      font: {
+        size: rem(16);
+        weight: 400;
+        family: $roboto;
+      }
+    }
+  }
+  .homeInfoInfo {
+    grid-column: 1 / 5;
+    box-shadow: 0 0 rem(2) $light, 0 0 rem(2) $light;
+    @media(min-width: $md) {
+      grid-column: 4 / 5;
+    }
+    width: 100%;
+    padding: rem(30);
+    p {
+      margin: rem(15) 0;
+      font: {
+        family: $roboto;
+        size: rem(14);
+        weight: 500;
+      }
+    }
+    .socialMedia {
+      display: flex;
+      justify-content: space-between;
+      a {
+        width: rem(40);
+        height: rem(40);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: rem(24);
+        color: $light;
+        border-radius: rem(4);
+        scale: 1;
+        transition: scale .3s ease-in-out;
+        &:hover {
+          scale: 1.1;
+        }
+      }
+      .instagram {
+        background-color: #E4405F;
+      }
+      .youtube {
+        background-color: #CD201F;
+      }
+      .facebook {
+        background-color: #1877F2;
+      }
+      .twitter {
+        background-color: #1DA1F2;
+      }
+    }
+  }
+}

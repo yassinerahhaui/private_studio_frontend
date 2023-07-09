@@ -1,0 +1,16 @@
+{
+  "show_on_map": "Welcome",
+  "reserve": "Reserve",
+  "contact_us": "Contact Us",
+  "opening_hours": "Hours of operation",
+  "selectioner": "SELECTIONNER",
+  "services": "SERVICES",
+  "date_title": "Choice of date & time",
+  "add_service": "Add a service to the suite",
+  "identification": "Identification",
+  "name": "Name",
+  "email": "Email",
+  "phone": "Phone",
+  "submit": "SEND",
+  "from": "from"
+}

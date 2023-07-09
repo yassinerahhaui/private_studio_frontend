@@ -1,0 +1,43 @@
+@import '../../scss/variables';
+
+
+.logo_box {
+  width: rem(200);
+  height: rem(50);
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  border: rem(4) solid $light;
+  border-radius: rem(2);
+  scale: 1.5;
+  background-color: $light;
+  user-select: none;
+  cursor: default;
+  &_left {
+    color: $light;
+    background-color: $dark;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-radius: rem(2);
+    font: {
+      family: $roboto;
+      size: rem(18);
+      weight: 600;
+    }
+  }
+  &_right {
+    color: $dark;
+    background-color: $light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-radius: rem(2);
+    font: {
+      family: $roboto;
+      size: rem(18);
+      weight: 600;
+    }
+  }
+}

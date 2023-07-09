@@ -1,0 +1,74 @@
+@import '../../scss/variables';
+
+
+
+
+.card {
+  background-color: $dark2;
+  border-radius: rem(4);
+  margin-inline: auto;
+  padding: rem(10);
+  box-shadow: 0 0 rem(2) $light, 0 0 rem(2) $light;
+  .cardHeader {
+    // height: rem(300);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: rem(20);
+    .image {
+      width: 100%;
+      // height: rem(300);
+    }
+  }
+  .cardTitle {
+    margin-top: rem(10);
+    margin-bottom: rem(20);
+    font: {
+      size: rem(20);
+      weight: 500;
+      family: $roboto;
+    }
+  }
+  .descItem {
+    margin-top: rem(5);
+    padding-inline: rem(10);
+    font: {
+      size: rem(14);
+      weight: 400;
+      family: $roboto;
+    }
+  }
+  .cardFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: rem(20);
+    font: {
+      size: rem(15);
+      weight: 700;
+      family: $roboto;
+    }
+  }
+  .cardButton {
+    width: 100%;
+    height: rem(50);
+    text-decoration: none;
+    background-color: $light;
+    color: $dark;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    margin-top: rem(20);
+    border-radius: rem(4);
+    font: {
+      size: rem(16);
+      weight: 700;
+      family: $roboto;
+    }
+    &:hover {
+      background-color: $light-grey;
+    }
+  }
+}
+

@@ -1,0 +1,31 @@
+@import "./scss/variables";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: $robotoc;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: $dark;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+li.navLink {
+  @media(min-width: $md) {
+    a.active {
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: rem(-2);
+        left: 0;
+        width: 100%;
+        border: rem(2) solid $dark;
+        border-radius: rem(4);
+        transition: width 0.3s ease-in-out;
+      }
+    }
+  }
+}

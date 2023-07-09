@@ -1,0 +1,11 @@
+@import '../../scss/variables';
+
+
+.sliderImages {
+  padding: rem(30);
+}
+.image {
+  width: 100%;
+  border-radius: rem(4);
+  cursor: grab;
+}

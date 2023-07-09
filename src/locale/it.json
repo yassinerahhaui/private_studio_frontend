@@ -1,0 +1,16 @@
+{
+  "show_on_map": "accoglienza",
+  "reserve": "Prenotare",
+  "contact_us": "Contattaci",
+  "opening_hours": "Ore di operazione",
+  "selectioner": "SELEZIONATORE",
+  "services": "SERVIZI",
+  "date_title": "Scelta di data e ora",
+  "add_service": "Aggiungi un servizio alla suite",
+  "identification": "Identificazione",
+  "name": "Nome",
+  "email": "E-mail",
+  "phone": "Telefono",
+  "submit": "INVIA",
+  "from": "da"
+}

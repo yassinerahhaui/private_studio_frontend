@@ -1,0 +1,37 @@
+@import '../../scss/variables';
+
+
+.about {
+  background-color: $dark2;
+  color: $light-grey;
+  .aboutLogo {
+    padding-top: rem(30);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .aboutItems {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: rem(30);
+    @media(max-width: $lg) {
+      grid-template-columns: repeat(1,1fr);
+    }
+  }
+  &Item {
+    margin-inline: rem(10);
+    padding: rem(20);
+    border: rem(2) solid $grey;
+    border-radius: rem(10);
+    background-color: $dark;
+    margin-bottom: rem(10);
+    &Title {
+      text-align: center;
+      margin-bottom: rem(20);
+    }
+    &Description {
+      color: $grey;
+    }
+  }
+}

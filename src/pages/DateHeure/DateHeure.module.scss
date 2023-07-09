@@ -1,0 +1,176 @@
+@import '../../scss/variables';
+
+@mixin box-position() {
+  width: rem(800);
+  max-width: 90%;
+  margin-inline: auto;
+}
+@mixin scrollbar-style () {
+  &::-webkit-scrollbar {
+    width: rem(20);
+  }
+  /* Track */
+  &::-webkit-scrollbar-track {
+    // box-shadow: $shadow; 
+    border-radius: rem(2);
+  }
+   
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $dark; 
+    border-radius: rem(2);
+    border: rem(2) solid $trans-grey;
+  }
+  
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: $dark2; 
+    border: rem(2) solid $trans-grey;
+  }
+}
+.button {
+  width: max-content;
+  height: rem(50);
+  padding: 0 rem(30);
+  display: flex;
+  align-items: center;
+  background-color: $light;
+  color: $dark;
+  text-decoration: none;
+  border-radius: rem(2);
+  border: none;
+  cursor: pointer;
+  font: {
+    size: rem(16);
+    weight: 600;
+    family: $roboto;
+  }
+}
+.title {
+  color: $light;
+  padding: rem(20) 0;
+  font: {
+    size: rem(20);
+    family: $roboto;
+    weight: 600;
+  }
+}
+.title2 {
+  display: none;
+  color: $light;
+  padding: rem(20) 0;
+  font: {
+    size: rem(20);
+    family: $roboto;
+    weight: 600;
+  }
+}
+.elementsBox {
+  margin: rem(20) 0;
+}
+.DateHeure {
+  @include box-position();
+}
+.dateTime {
+  width: 100%;
+  overflow-x: scroll;
+  box-shadow: 0 0 rem(2) $light, 0 0 rem(2) $light;
+  @include scrollbar-style();
+  background-color: $dark2;
+  margin-bottom: rem(30);
+  .dateTimeBox {
+    display: flex;
+    width: max-content;
+    .dayBox {
+      width: rem(130);
+      text-align: center;
+      @media (max-width: $sm) {
+        width: rem(80);
+      }
+      h6 {
+        font: {
+          size: rem(14);
+          weight: 500;
+        }
+        color: $light;
+        padding: rem(10);
+        border-bottom: rem(1) solid $trans-grey;
+      }
+      p {
+        font: {
+          size: rem(14);
+          weight: 400;
+        }
+        color: $light-grey;
+        margin: rem(7);
+        cursor: pointer;
+        &:hover {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+.selectedTime {
+  margin-bottom: rem(10);
+  padding: rem(20);
+  background-color: $dark2;
+  border-radius: rem(2);
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  &Name {
+    color: $light-grey;
+    font: {
+      size: rem(14);
+      weight: 500;
+      family: $roboto;
+    }
+  }
+  &Button {
+    color: $dark2;
+    background-color: #dfdb0f;
+    font-size: rem(25);
+    width: rem(35);
+    height: rem(35);
+    border-radius: rem(4);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    &:hover {
+      background-color: #a9c91c;
+    }
+  }
+}
+.formBox {
+  background-color: $dark2;
+  color: $light;
+  margin-bottom: rem(30);
+  font: {
+    size: rem(18);
+    weight: 600;
+    family: $roboto;
+  }
+  padding: rem(30) 0;
+  form {
+    width: 90%;
+    margin-inline: auto;
+    input {
+      width: 100%;
+      padding: rem(20) rem(10);
+      background-color: $dark;
+      color: $light;
+      outline: none;
+      border: none;
+      margin-top: rem(10);
+      margin-bottom: rem(20);
+      border-bottom: rem(2) solid transparent;
+      &:focus {
+        border-bottom: rem(2) solid $light;
+      }
+    }
+  }
+}

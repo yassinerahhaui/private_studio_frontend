@@ -1,0 +1,23 @@
+@import "../../scss/variables";
+
+.footer {
+  width: 100%;
+  height: rem(40);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: $dark2;
+  color: $light;
+  border-top: rem(1) solid $grey;
+  .footerCopyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: {
+      family: $roboto;
+      size: rem(13);
+      weight: 400;
+    }
+  }
+}
