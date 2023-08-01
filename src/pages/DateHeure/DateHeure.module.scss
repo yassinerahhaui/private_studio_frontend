@@ -5,29 +5,7 @@
   max-width: 90%;
   margin-inline: auto;
 }
-@mixin scrollbar-style () {
-  &::-webkit-scrollbar {
-    width: rem(20);
-  }
-  /* Track */
-  &::-webkit-scrollbar-track {
-    // box-shadow: $shadow; 
-    border-radius: rem(2);
-  }
-   
-  /* Handle */
-  &::-webkit-scrollbar-thumb {
-    background: $dark; 
-    border-radius: rem(2);
-    border: rem(2) solid $trans-grey;
-  }
-  
-  /* Handle on hover */
-  &::-webkit-scrollbar-thumb:hover {
-    background: $dark2; 
-    border: rem(2) solid $trans-grey;
-  }
-}
+
 .button {
   width: max-content;
   height: rem(50);
@@ -44,6 +22,16 @@
     size: rem(16);
     weight: 600;
     family: $roboto;
+  }
+}
+.errors {
+  color: #f72727;
+  margin-bottom: rem(10);
+  font: {
+    size: rem(12);
+    weight: 500;
+    family: $roboto;
+    style: italic;
   }
 }
 .title {

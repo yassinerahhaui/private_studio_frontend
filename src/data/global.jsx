@@ -1,0 +1,1 @@
+export const urlName = 'http://localhost:8000'

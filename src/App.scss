@@ -11,6 +11,7 @@ body {
   background-color: $dark;
   width: 100%;
   overflow-x: hidden;
+  @include scrollbar-style();
 }
 
 li.navLink {
@@ -28,4 +29,8 @@ li.navLink {
       }
     }
   }
+}
+
+#successMessage {
+  display: none;
 }

@@ -3,7 +3,7 @@ import styles from './Coupe.module.scss'
 import { useTranslation } from 'react-i18next'
 import { MdDeleteOutline } from 'react-icons/md'
 import { useDispatch } from 'react-redux'
-import { deleteCoupe } from '../../store/slices/appointmentSlice'
+import { deleteCoupe, deleteData } from '../../store/slices/appointmentSlice'
 
 const Coupe = (props) => {
   const [t,i18n] = useTranslation()
@@ -26,7 +26,10 @@ const Coupe = (props) => {
   return (
     <div className={styles.element}>
       <p className={styles.elementText}>{`${name} - ${data.time} - ${data.price}`}</p>
-      <button className={styles.elementButton} onClick={()=> dispatch(deleteCoupe(data.id))}><MdDeleteOutline /></button>
+      <button className={styles.elementButton} onClick={()=> {
+        dispatch(deleteCoupe(data.id))
+        dispatch(deleteData(`${data.name_fr} - ${data.time} - ${data.price}`))
+      }}><MdDeleteOutline /></button>
     </div>
   )
 }

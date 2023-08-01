@@ -12,5 +12,10 @@
   "email": "E-mail",
   "phone": "Téléphone",
   "submit": "ENVOYER",
-  "from": "a partir de"
+  "from": "a partir de",
+  "reserved_message": "Votre rendez-vous a été réservé chez private_studio le",
+  "address": "Adresse",
+  "view_on_maps": "Voir sur la carte",
+  "sent_address": "L'adresse a été envoyée à votre adresse e-mail.",
+  "come_on_time": "Il est important que vous veniez à l'heure."
 }

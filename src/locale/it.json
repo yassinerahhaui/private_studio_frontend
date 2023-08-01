@@ -12,5 +12,10 @@
   "email": "E-mail",
   "phone": "Telefono",
   "submit": "INVIA",
-  "from": "da"
+  "from": "da",
+  "reserved_message": "Il tuo appuntamento è stato prenotato presso private_studio il",
+  "address": "Indirizzo",
+  "view_on_maps": "Visualizza sulla mappa",
+  "sent_address": "L'indirizzo è stato inviato alla tua e-mail.",
+  "come_on_time": "È importante che tu arrivi in orario."
 }

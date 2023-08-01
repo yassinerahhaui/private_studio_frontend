@@ -12,5 +12,10 @@
   "email": "Email",
   "phone": "Phone",
   "submit": "SEND",
-  "from": "from"
+  "from": "from",
+  "reserved_message": "Your appointment has been reserved at private_studio on",
+  "address": "Address",
+  "view_on_maps": "View on maps",
+  "sent_address": "The address has been sent to your e-mail.",
+  "come_on_time": "It is important that you come on time."
 }

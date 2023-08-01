@@ -16,7 +16,7 @@ const About = () => {
     }
   };
   return (
-    <div className={styles.about}>
+    <div className={styles.about} id="about">
       <div className={styles.aboutLogo}>
         <Logo scale={1.2} />
       </div>

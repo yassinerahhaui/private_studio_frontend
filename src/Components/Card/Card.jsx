@@ -3,7 +3,7 @@ import styles from "./Card.module.scss";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { addCoupe } from "../../store/slices/appointmentSlice";
+import { addCoupe, addData } from "../../store/slices/appointmentSlice";
 
 const Card = (props) => {
   const [t, i18n] = useTranslation();
@@ -60,7 +60,7 @@ const Card = (props) => {
       </div>
       <Link
         to="/date"
-        onClick={() =>
+        onClick={() => {
           dispatch(
             addCoupe({
               id: data.id,
@@ -71,6 +71,10 @@ const Card = (props) => {
               price: data.price,
             })
           )
+          dispatch(
+            addData(`${data.name_fr} - ${data.time} - ${data.price}`)
+          )
+        }
         }
         className={styles.cardButton}
       >

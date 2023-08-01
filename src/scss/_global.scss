@@ -2,3 +2,27 @@
   $rem: calc($px / 16) + rem;
   @return $rem;
 }
+
+@mixin scrollbar-style () {
+  &::-webkit-scrollbar {
+    width: rem(20);
+  }
+  /* Track */
+  &::-webkit-scrollbar-track {
+    // box-shadow: $shadow; 
+    border-radius: rem(2);
+  }
+   
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $dark; 
+    border-radius: rem(2);
+    border: rem(2) solid $trans-grey;
+  }
+  
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: $dark2; 
+    border: rem(2) solid $trans-grey;
+  }
+}
